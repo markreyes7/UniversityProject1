@@ -19,7 +19,7 @@ public class UniversityDriver {
                 ObjectInputStream in = new ObjectInputStream(fileInputStream);
                 university = (University) in.readObject();
                 in.close();
-                fileInputStream.close();
+                fileInputStream.close(); 
             }
             catch (IOException i){
                 i.printStackTrace();
